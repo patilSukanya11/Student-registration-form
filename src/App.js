@@ -53,12 +53,12 @@ function App() {
     return Object.keys(temp).length === 0;
   };
 
-  // ------------------ HANDLE CHANGE ------------------
+  
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // ------------------ HANDLE SUBMIT ------------------
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -102,7 +102,7 @@ function App() {
 
         <form onSubmit={handleSubmit}>
 
-          {/* FIRST + LAST NAME */}
+         
           <div className="row">
             <div className="col-md-6 mb-3">
               <label>First Name</label>
@@ -129,7 +129,7 @@ function App() {
             </div>
           </div>
 
-          {/* EMAIL + PHONE */}
+         
           <div className="row">
             <div className="col-md-6 mb-3">
               <label>Email</label>
@@ -157,7 +157,7 @@ function App() {
             </div>
           </div>
 
-          {/* GENDER + DOB */}
+          
           <div className="row">
             <div className="col-md-6 mb-3">
               <label>Gender</label>
@@ -188,7 +188,7 @@ function App() {
             </div>
           </div>
 
-          {/* DEPARTMENT */}
+         {/* Department */}
           <div className="mb-3">
             <label>Department</label>
             <select
@@ -207,7 +207,7 @@ function App() {
             <small className="text-danger">{errors.department}</small>
           </div>
 
-          {/* ADDRESS */}
+          
           <div className="mb-3">
             <label>Address</label>
             <textarea
@@ -220,7 +220,7 @@ function App() {
             <small className="text-danger">{errors.address}</small>
           </div>
 
-          {/* CITY STATE PIN */}
+       
           <div className="row">
             <div className="col-md-4 mb-3">
               <label>City</label>
@@ -260,7 +260,7 @@ function App() {
             </div>
           </div>
 
-          {/* SUBMIT */}
+          
           <button className="btn btn-submit" type="submit" disabled={loading}>
             {loading ? "Registering..." : "Register Student"}
           </button>
