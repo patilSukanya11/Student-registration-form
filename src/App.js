@@ -23,7 +23,7 @@ function App() {
     pincode: "",
   });
 
-  // ------------------ VALIDATION ------------------
+
   const validate = () => {
     let temp = {};
 
